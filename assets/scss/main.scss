@@ -1,0 +1,139 @@
+@import '~assets/scss/colors';
+@import '~assets/scss/fonts';
+html, body {
+    background-color: $bg;
+}
+
+.px-203 {
+    padding-left: 203px;
+    padding-right: 203px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.pl-1rem {
+    padding-left: 1rem;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+
+.badge-default, .badge-active {
+    border-radius: 30px;
+}
+
+.badge-default {
+    background-color: $gray1;
+}
+
+.badge-active {
+    background-color: $blue1;
+}
+
+
+button {
+    @include roboto-sans(14px, 36p, 500, $white1) {
+        letter-spacing: 1.25;
+        height: 36px;
+        padding: 0px 16px;
+        cursor: pointer;
+        border: none;
+
+    }
+
+    &.primary {
+       background-color: $blue1 !important;
+       border-radius: 30px;
+       transition: 0.3s;
+
+       &:hover {
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+        background-color: $blue2 !important;
+       }
+    }
+
+    &.default {
+       background-color: transparent !important; 
+       color: $blue1 !important;
+    }
+}
+
+.spacer {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+    &.active {
+        border-color: $blue3;
+    }
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.width-50 {
+    width: 50px;
+}
+
+input {
+
+}
+
+select {
+    min-width: 203px;
+    min-width: 203px;
+}
+
+input, select {
+    @include roboto-sans(16px, 24px, 400, $black4) {
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid $gray1;
+        outline: none !important;
+        max-height: 40px;
+    }
+
+    &:hover {
+        
+        box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 38%) !important;
+        transition: 0.3s;
+        border: 1px solid $gray1 !important;
+    }
+}
+
+input:focus, select:focus {
+    box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 38%) !important;
+    transition: 0.3s;
+    border: 1px solid $gray1 !important;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
